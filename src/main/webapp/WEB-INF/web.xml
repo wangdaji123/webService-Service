@@ -4,4 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+   <listener>
+         <listener-class>net.cc.servlet.myListener</listener-class>
+   </listener>
 </web-app>

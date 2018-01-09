@@ -1,5 +1,6 @@
 package net.cc.helloworldc;
 
+import javax.jws.WebParam;
 import javax.jws.WebService;
 
 
@@ -10,19 +11,12 @@ import javax.jws.WebService;
 public class HelloWorldImpl implements HelloWorld
 {
 
-	public String sayHello(final String text)
+	public String sayHello(@WebParam(name = "userName") final String userName)
 	{
 		// TODO Auto-generated method stub
-		System.out.println(text);
-		return "say " + text;
+		System.out.println("客户端提交信息： " + userName);
+		return "say Hello " + userName;
 	}
 
-	/**
-	 * @param args
-	 */
-	public static void main(final String[] args)
-	{
-		System.out.println("输出");
-	}
 
 }

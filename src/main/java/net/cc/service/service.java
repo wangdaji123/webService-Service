@@ -1,4 +1,4 @@
-package net.cc.server;
+package net.cc.service;
 
 import javax.xml.ws.Endpoint;
 
@@ -9,12 +9,12 @@ import net.cc.helloworldc.HelloWorldImpl;
 /**
  *
  */
-public class Servers
+public class service
 {
 	/**
 	*
 	*/
-	public Servers()
+	public service()
 	{
 
 		final HelloWorld hello = new HelloWorldImpl();
@@ -28,7 +28,7 @@ public class Servers
 	public static void main(final String[] args)
 	{
 
-		final Servers servers = new Servers();
+		final service servers = new service();
 		System.out.println("server start ..." + servers);
 	}
 

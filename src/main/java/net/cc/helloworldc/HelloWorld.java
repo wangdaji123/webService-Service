@@ -15,5 +15,5 @@ public interface HelloWorld
 	 * @return
 	 */
 	@SuppressWarnings("javadoc")
-	String sayHello(@WebParam(name = "text") String text);
+	String sayHello(@WebParam(name = "userName") String userName);
 }

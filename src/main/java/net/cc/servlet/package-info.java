@@ -4,4 +4,4 @@
 /**
  * 
  */
-package net.cc.server;
+package net.cc.servlet;
